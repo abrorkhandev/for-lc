@@ -1,0 +1,126 @@
+@import url(/style.css);
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+#course{
+    color: brown;
+}
+
+.contentt h2{
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    top: 180px;
+}
+
+.contentt a{
+    color: #eee;
+    padding: 10px;
+}
+
+.contentt i{
+    color: #eee;
+}
+
+.courses{
+    max-width: 1068px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    box-shadow: var(--box-shadow);
+}
+
+.courses h1{
+    font-size: 3rem;
+    font-family: "Jost", sans-serif;
+    text-align: center !important;
+    border-bottom: 3px dashed rgba(202, 22, 22, 0.541);
+    color: #2878EB;
+}
+
+.courses .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(20rem , 1fr));
+    gap: 10px;
+}
+
+.courses .box-container .box{
+    padding:3rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    outline: var(--outline);
+}
+
+.courses .box-container .box img:hover{
+    transform: scale(1.1);
+}
+
+.text{
+    background: linear-gradient(to center, rgba(91, 13, 218, 0), #120f2d);  
+}
+
+.courses .box-container .box h4{
+    font-size: 2rem;
+    position: relative;
+    bottom: 13vh;
+    color: #0a70ff;
+    z-index: 1;
+    text-align: center !important;
+}
+
+.courses .box-container .box .border-top{
+    border-top: 1px solid #16426e !important;
+    width: 22vw;
+    font-size: 2rem;
+    position: relative;
+    bottom: 8vh;
+    color: #0a70ff;
+    text-align: center;
+    
+}
+
+.courses .box-container .box .border-top span{
+    justify-content: space-between !important;
+}
+
+img{
+    width: 22vw;
+    height: 100%;
+}
+
+@media (max-width:991px){
+    img{
+        width: 25vw;
+    }
+    .courses .box-container .box .border-top{
+        width: 25vw;
+    }
+}
+
+@media (max-width:770px){
+    img{
+        width: 25vw;
+    }
+}
+
+@media (max-width:563px) {
+    img{
+        width: 40vw;
+    }
+    
+    .courses .box-container .box .border-top{
+        width: 40vw;
+    }
+}
+
+@media (max-width:397px) {
+    img{
+        width: 80vw;
+    }
+
+    .courses .box-container .box .border-top{
+        width: 80vw;
+    }
+}

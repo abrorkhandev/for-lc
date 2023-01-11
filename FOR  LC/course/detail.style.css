@@ -1,0 +1,130 @@
+.contentt.active{
+    display: none !important;
+}
+
+.img-content.active{
+    display: none !important;
+}
+
+.courses-detail-container{
+    width: 100%;
+    max-width: 1068px;
+    margin: auto;
+    position: relative;
+}
+
+.courses-detail-container.active{
+    display: none;
+}
+
+.courses-detail-container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(30rem , 1fr));
+    gap: 1.5rem;
+}
+
+.courses-detail-container .box-container .box:nth-child(2){
+    box-shadow: var(--box-shadow);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.courses-detail-container .box-container .box h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding: 1rem;
+    color: #2878EB;
+}
+
+.courses-detail-container .box-container .box img{
+    width: 40vw;
+}
+
+.courses-detail-container .box-container .box h1 span{
+    color: var(--light-color-2) !important;
+}
+
+.courses-detail-container .box-container .box h1 span span{
+    font-size: 1.5rem;
+    color: #2878EB !important;
+}
+
+.courses-detail-container .box-container .box h1 a{
+    color: var(--light-color-2) !important;
+}
+
+.courses-detail-container .box-container .box p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: 1rem;
+}
+
+.contact-container{
+    max-width: 1068px;
+    width: 100vw !important;
+    height: 110vh;
+    margin: auto;
+    position: fixed;
+    position: relative;
+    top: 50px;
+    display: none;
+    z-index: 10000;
+}
+
+.contact-container.active{
+    display: block !important;
+    z-index: 100000;
+}
+
+.contact-container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(40rem , 1fr));
+    gap: 1.5rem;
+}
+
+.contact-container .box-container .box{
+    padding: 2rem 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    font-size: 1.4rem;
+    outline: var(--outline);
+    text-align: center;
+}
+
+.contact-container .box-container .box input{
+    width: 20vw;
+    height: 10vh;
+    padding: 10px;
+    font-size: 2rem;
+    border: 2px dashed var(--light-color-2);
+    text-transform: capitalize;
+}
+
+.contact-container .btn-join{
+    padding: 2rem 5rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    font-size: 1.4rem;
+    outline: var(--outline);
+    background-color: var(--light-color-2); 
+    color: #eee;
+    cursor: pointer;
+}
+
+@media (max-width:991px){
+    .contact-container .box-container .box input{
+        width: 30vw
+    }
+}
+
+@media (max-width:770px){
+    .contact-container .box-container .box input{
+        width: 43vw
+    }
+}
+
+@media (max-width:598px){
+    .contact-container .box-container .box input{
+        width: 80vw
+    }
+}
